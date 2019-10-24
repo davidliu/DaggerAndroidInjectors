@@ -1,4 +1,4 @@
-package com.deviange.daggerandroidinjectors.ui.main
+package com.deviange.daggerandroidinjectors.ui.generic
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import dagger.android.support.DaggerFragment
 import java.util.*
 import javax.inject.Inject
 
-class MainFragment : DaggerFragment() {
+class GenericFragment : DaggerFragment() {
 
     @Inject
     lateinit var foo: Optional<String>
@@ -25,6 +25,6 @@ class MainFragment : DaggerFragment() {
     abstract class Module
 
     companion object {
-        fun newInstance() = MainFragment()
+        fun newInstance() = GenericFragment()
     }
 }

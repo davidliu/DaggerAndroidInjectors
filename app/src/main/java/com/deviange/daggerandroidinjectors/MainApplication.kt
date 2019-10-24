@@ -1,6 +1,6 @@
 package com.deviange.daggerandroidinjectors
 
-import com.deviange.daggerandroidinjectors.ui.main.MainFragment
+import com.deviange.daggerandroidinjectors.ui.generic.GenericFragment
 import dagger.BindsOptionalOf
 import dagger.Component
 import dagger.Module
@@ -32,7 +32,7 @@ interface InjectionModule {
     fun mainActivity(): MainActivity
 
     @ContributesAndroidInjector
-    fun mainFragment(): MainFragment
+    fun mainFragment(): GenericFragment
 }
 
 @Module

@@ -1,7 +1,7 @@
 package com.deviange.daggerandroidinjectors
 
 import android.os.Bundle
-import com.deviange.daggerandroidinjectors.ui.main.MainFragment
+import com.deviange.daggerandroidinjectors.ui.generic.GenericFragment
 import dagger.Provides
 import dagger.android.support.DaggerAppCompatActivity
 
@@ -12,7 +12,7 @@ class MainActivity : DaggerAppCompatActivity() {
         setContentView(R.layout.main_activity)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.container, MainFragment.newInstance())
+                .replace(R.id.container, GenericFragment.newInstance())
                 .commitNow()
         }
     }
